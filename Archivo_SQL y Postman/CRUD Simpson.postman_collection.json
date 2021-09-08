@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "7cfec0b3-668d-4452-9793-2b1d37352544",
+		"name": "CRUD Simpson",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "lista",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ip}}/empleado",
+					"host": [
+						"{{ip}}"
+					],
+					"path": [
+						"empleado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mestra id ( Edit)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "HTTP://LOCALHOST:8000/empleado/15/edit",
+					"protocol": "HTTP",
+					"host": [
+						"LOCALHOST"
+					],
+					"port": "8000",
+					"path": [
+						"empleado",
+						"15",
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "HTTP://LOCALHOST:8000/empleado/15/edit",
+					"protocol": "HTTP",
+					"host": [
+						"LOCALHOST"
+					],
+					"port": "8000",
+					"path": [
+						"empleado",
+						"15",
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Nombre",
+							"value": "EL Homer",
+							"type": "text"
+						},
+						{
+							"key": "ApellidoPaterno",
+							"value": "Simpson",
+							"type": "text"
+						},
+						{
+							"key": "ApellidoMaterno",
+							"value": "nn",
+							"type": "text"
+						},
+						{
+							"key": "Correo",
+							"value": "er@gmail",
+							"type": "text"
+						},
+						{
+							"key": "Foto",
+							"type": "file",
+							"src": "/C:/Users/Edgard/Downloads/homer.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{ip}}/empleado/20",
+					"host": [
+						"{{ip}}"
+					],
+					"path": [
+						"empleado",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Nombre",
+							"value": "EL Homer",
+							"type": "text"
+						},
+						{
+							"key": "ApellidoPaterno",
+							"value": "Simpson",
+							"type": "text"
+						},
+						{
+							"key": "ApellidoMaterno",
+							"value": "nn",
+							"type": "text"
+						},
+						{
+							"key": "Correo",
+							"value": "er@gmail",
+							"type": "text"
+						},
+						{
+							"key": "Foto",
+							"type": "file",
+							"src": "/C:/Users/Edgard/Downloads/homer.jpg"
+						},
+						{
+							"key": "_method",
+							"value": "PUT",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{ip}}/empleado/20",
+					"host": [
+						"{{ip}}"
+					],
+					"path": [
+						"empleado",
+						"20"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
